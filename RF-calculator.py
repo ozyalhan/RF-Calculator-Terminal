@@ -11,7 +11,7 @@ This Program has a purpose that makes easier to understand of RF/Microwave Terms
 
     For example, choose RL mode, enter the value and get results of VSWR, Reflection Coefficient and ML.
 
-Porgram has also RL calculator that get inputs of Pi(İncident Power) and Pr(reflected power) as Watt or dBm, calculate the return loss value as DB.
+Program has also RL calculator that get inputs of Pi(İncident Power) and Pr(reflected power) as Watt or dBm, calculate the return loss value as DB.
 
 """
 
