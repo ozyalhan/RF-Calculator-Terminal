@@ -9,6 +9,11 @@ This program has a purpose that makes easier to understand of RF/Microwave Terms
 - Γ     Reflection Coefficient
 - ML    Mismatch Loss
 
+For example, choose RL mode, enter the value and get results of VSWR, Reflection Coefficient and ML.
+
+Program has also RL calculator that get inputs of Pi(İncident Power) and Pr(reflected power) as Watt or dBm, calculate the return loss value as DB.
+
+
 ### Installation
 
 ```sh
