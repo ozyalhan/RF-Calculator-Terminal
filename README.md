@@ -26,7 +26,7 @@ $ python RF-calculator.py
 
 ```sh
 $ git clone https://github.com/ozyalhan/RF-Calculator-Terminal.git
-$ cd RF-Calculator-Terminal/dist/RF-calculator
+$ cd RF-Calculator-Terminal/
 $ # run RF-calculator.exe
 ```
 
