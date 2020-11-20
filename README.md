@@ -16,11 +16,20 @@ Program has also RL calculator that get inputs of Pi(İncident Power) and Pr(ref
 
 ### Installation
 
+
 ```sh
 $ git clone https://github.com/ozyalhan/RF-Calculator-Terminal.git
 $ cd RF-Calculator-Terminal
 $ python RF-calculator.py
 ```
+-or run .exe directly
+
+```sh
+$ git clone https://github.com/ozyalhan/RF-Calculator-Terminal.git
+$ cd RF-Calculator-Terminal/dist/RF-calculator
+$ # run RF-calculator.exe
+```
+
 
 ### Todos
 
