@@ -11,8 +11,7 @@ This Program has a purpose that makes easier to understand of RF/Microwave Terms
 
     For example, choose RL mode, enter the value and get results of VSWR, Reflection Coefficient and ML.
 
-Program has also RL calculator that get inputs of Pi(İncident Power) and Pr(reflected power) as Watt or dBm, calculate the return loss value as DB.
-
+Program has also RL calculator that get inputs of Pi(Incident Power) and Pr(reflected power) as Watt or dBm, calculate the return loss value as dB.
 """
 
 
@@ -50,7 +49,7 @@ def main_program(selection):
         main_rl_function()
         work_again()
 
-        # input:VSWR | outputs:RL Reflection Coefficient(Γ) ML
+    # input:VSWR | outputs:RL Reflection Coefficient(Γ) ML
     elif selection == "2":
         main_vswr_function()
         work_again()
@@ -155,7 +154,7 @@ def main_vswr_function():
 
 
 def main_gama_function():
-    print("Reflection Coefficient(Γ) range is [1,1000]")
+    print("Absolute value of Reflection Coefficient(|Γ|) range is [0,1]")
     try:
         gama = float(input("Reflection Coefficient(Γ): "))
     except ValueError as e:
@@ -164,7 +163,9 @@ def main_gama_function():
     else:
         if gama == 1:
             print("Reflection Coefficient(Γ)= 1 | VSWR= ∞ | RL= 0 dB | ML= ∞")
-        elif gama > 1 and gama <= 1000:
+        elif gama == 0:
+            print("Reflection Coefficient(Γ)= 0 | VSWR= 1 | RL= ∞ dB | ML= 0 dB")
+        elif gama < 1 and gama > 0:
             rl = gama_to_rl(gama)
             vswr = gama_to_vswr(gama)
             ml = gama_to_ml(gama)
